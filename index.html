@@ -116,5 +116,114 @@
         const greeting = `Hello ${fname} ${fname}`;
         console.log(greeting);
          </script>
+
+         <script>
+            let text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            let length = text.length;
+            console.log('The length of text is:' + length);
+
+            text = 'Hello World!';
+            let char = text.charAt(6);
+            console.log(char);
+
+            char = text.charCodeAt(1);
+            console.log(char);
+
+            code = text.codePointAt();
+            console.log(code);
+
+            const secondName = "KitMarjohn";
+            let letter = secondName.at(2);
+            console.log(letter);
+
+            letter = secondName[2];
+            console.log(letter);
+
+
+            char = text[2];
+            console.log(char);
+
+            text = 'Apple, Banana, Kiwi';
+            let part = text.slice(7);
+            console.log(part);
+
+            part = text.slice(-12);
+            console.log(part);
+
+            part = text.slice(-19, -12);
+            console.log(part);
+
+            let str = 'Banana, Kiwi, Apple';
+            part = str.substring(8, 1);
+            console.log(part);
+
+            let text1 = 'kit marjohn bagasol';
+            let text2 = text1.toLocaleUpperCase();
+            console.log(text2);
+
+            text2 = text2.toLowerCase();
+            console.log(text2);
+
+            let text3 = text1.concat(" ", text2);
+            console.log(text3);
+
+
+            text1 = "       Hello World!        ";
+            text2 = text1.trim();
+
+            console.log(text2.length, text1.length);
+
+            text2 = text1.trimStart();
+            console.log(text2.length);
+
+            text2 = text1.trimEnd();
+            console.log(text2.length);
+
+            text1 = 'I';
+            text2 = text1.padStart(5, 'Love');
+            console.log(text2);
+
+            let number1 = 5;
+            let convertToString = number1.toString();
+            let padded = convertToString.padStart(4, "0");
+            console.log(padded);
+
+            padded = convertToString.padEnd(4, "0");
+            console.log(padded);
+
+            text1 = 'Love'
+            text2 = text1.repeat(3);
+            console.log(text2);
+
+            text1 = 'Happy INDEPENDENCE Day!';
+            text2 = text1.replace(/Independence/i, "Birthday");
+            console.log(text2);
+            
+            text2 = text1.replace("INDEPENDENCE", "Birth")
+            console.log(text2);
+
+            text1 = "I love love You";
+            text2 = text1.replace(/LOVE/gi, "hate"); 
+            console.log(text2);
+
+            text2 = text1.replaceAll('love', 'hate');
+            console.log(text2);
+
+            text1 = "Mississippi, Althea, Margareth";
+            myArray =  text1.split(" ");
+            console.log(myArray);
+
+            console.log(myArray[0]);
+
+            const strPrim = "foo"; // A literal is a string primitive
+            const strPrim2 = String(1); // Coerced into the string primitive "1"
+            const strPrim3 = String(true); // Coerced into the string primitive "true"
+            const strObj = new String(strPrim); // String with new returns a string wrapper object.
+
+            console.log(typeof strPrim); // "string"
+            console.log(typeof strPrim2); // "string"
+            console.log(typeof strPrim3); // "string"
+            console.log(typeof strObj); // "object"
+         </script>
 </body>
 </html>
