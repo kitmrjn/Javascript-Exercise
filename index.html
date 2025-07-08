@@ -407,7 +407,7 @@
             // usage: functions showOk, showCancel are passed as arguments to ask
             ask("Do you agree?", showOk, showCancel);
             */ 
-
+            /*
             let ask = (question,yes, no) => {
                 if (confirm(question)) yes()
                 else no ();
@@ -417,6 +417,31 @@
                  () => {alert("You agreed.");},
                  () => {alert("You cancelled the execution.");},
             )
+                 */
+
+            </script>
+
+            <script>
+
+                let add7 = number => number + 7;
+
+                console.log(add7(1));
+
+                function multipy (num1, num2) {
+                    return num1 * num2;
+                }
+                console.log(multipy(10, 2));
+
+                function capitalize (string) {
+                    return string[0].toUpperCase() + string.slice(1).toLowerCase()
+                }
+                console.log(capitalize("HAPPY Birthday"));
+
+                function lastletter (letter) {
+                    return letter.slice(-1)
+                }
+
+                console.log(lastletter("abcd"));
 
             </script>
 </body>
