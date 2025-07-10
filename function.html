@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        /* using map()
         let number = [1,2,3,4,5,6,7,8,9,10];
         let tripledResult = 0;
         function product (num) {
@@ -22,9 +23,38 @@
         });
         console.log(tripledResult);
 
-        console.log(tripled);
-
+        console.log(tripled); */
         
+        /* using filter()
+        let number = [1,2,3,4,5,6,7,8,9,10];
+        let evenFilterResult = 0;
+
+        function evenNumber (even) {
+            return even % 2 == 0;
+        }
+        
+        let filterEven = number.filter(evenNumber);
+
+        filterEven.forEach(number => {
+            evenFilterResult= number * 3;
+        })
+        console.log(filterEven);
+        console.log(evenFilterResult); */ 
+
+        //using reduce()
+        let number = [1,2,3,4,5,6,7,8,9,,10];
+
+        function excludeOdd (num) {
+            return num % 2 == 0;
+        }
+
+       let filterEven = number.filter(excludeOdd);
+
+       const reduceMethod = filterEven.reduce((evenTotal, currentItem) => {
+            return evenTotal + currentItem;
+       });
+
+       console.log(reduceMethod);
     </script>
 </body>
 </html>
