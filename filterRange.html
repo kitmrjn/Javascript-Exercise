@@ -51,7 +51,7 @@
 
         alert(arr); */ 
 
-        const array = ['HTML', 'JavaScript', 'CSS'];
+        /*const array = ['HTML', 'JavaScript', 'CSS'];
 
         function copySorted (arr) {
             return arr.slice().sort();
@@ -60,6 +60,14 @@
         let sorted = copySorted(array);
 
         alert(sorted);
+        alert(array);*/ 
+
+        function shuffle (array) {
+            array.sort(() => Math.random() - 0.5);
+        }
+
+        let array = [1,2,3,4,5,6];
+        shuffle(array);
         alert(array);
 
         
