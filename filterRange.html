@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [5,3,8,1];
+
+        function filterRange (array, a, b) {
+           return numbers.filter(array => (array >= a && array <= b))
+        }
+
+        let filtered = filterRange(numbers, 1, 4);
+
+        alert(filtered);
+        alert(numbers);
+
+        
+    </script>
+</body>
+</html>
