@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function camelize (str) {
+            return str.split('-').map((element, index) => 
+                index == 0 ? element : element[0].toUpperCase() + element.slice(1)
+            ).join('');
+        }
+        
+        console.log(camelize('border-width'),
+                    camelize('list-style-image'),
+                    camelize('-webkit-transition'));
+    </script>
+</body>
+</html>
