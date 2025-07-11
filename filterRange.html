@@ -62,13 +62,30 @@
         alert(sorted);
         alert(array);*/ 
 
-        function shuffle (array) {
+        /*function shuffle (array) {
             array.sort(() => Math.random() - 0.5);
         }
 
         let array = [1,2,3,4,5,6];
         shuffle(array);
-        alert(array);
+        alert(array);*/ 
+
+        function unique (arr) {
+            let result = [];
+
+            for (str of arr) {
+                if (!result.includes(str)) {
+                    result.push(str);
+                }
+            }
+            return result;
+        }
+
+        let array = ["Hare", "Krishna", "Hare", "Krishna",
+                       "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+
+        alert(unique (array));
+
 
         
         
