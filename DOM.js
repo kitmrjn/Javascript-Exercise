@@ -1,4 +1,4 @@
-const container = document.querySelector(".container")
+/*const container = document.querySelector(".container")
 
 const content = document.createElement("p");
 content.classList.add('content');
@@ -32,3 +32,31 @@ paragraph.textContent = 'ME TOO!'
 secondContainer.appendChild(heading);
 secondContainer.appendChild(paragraph);
 
+
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World");
+
+btn.addEventListener("click", () => 
+    alert("Hello World!!"));
+
+function functionLick () {
+    alert('HAHAHHAAH');
+};
+
+btn.onclick = functionLick;
+
+btn.addEventListener("click", functionLick);
+
+
+btn.addEventListener("click", function(e) {
+    //console.log(e.target);
+    e.target.style.background = "blue";
+});*/
+
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        alert(button.id);
+    })
+});

@@ -461,13 +461,14 @@
                /* for (userInput = 0; userInput <= 100 && userInput !== null; userInput = prompt('Enter a number greater than 100: ', 0)){}
                 console.log(userInput);*/ 
                 
-                let n = 2;
-
-                while (n < 7) {
-                    alert(n);
-                    if( n !== n*2) continue;
-                 n++;
-                }
+                function leapYears (year) {
+    if (year % 4 && year % 400) {
+        return true;
+    } else if (year % 100) {
+        return false;
+    }
+}
+ console.table(leapYears(1996));
             </script>
 </body>
 </html>
