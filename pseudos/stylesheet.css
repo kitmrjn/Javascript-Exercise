@@ -1,0 +1,44 @@
+.pseudo{
+    background-color: lavender;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.pseudo:hover{
+    background-color: lavenderblush;;
+}
+
+.pseudo::after{
+    content: "";
+}
+
+.pseudo:hover::after{
+    content: "→";
+    opacity: 0.5;
+    margin-left: 12px;
+    transition: 300ms;
+}
+
+header{
+    background-color: red;
+    padding-right: 20px ;
+}
+
+body{
+    margin: 0;
+}
+
+#nav-list{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+li:empty {
+  display: none;
+}
+

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('SourceCodePro-Black.woff2') format('woff2'),
+        url('SourceCodePro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChunkFive Print';
+    src: url('ChunkFivePrint.woff2') format('woff2'),
+        url('ChunkFivePrint.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
