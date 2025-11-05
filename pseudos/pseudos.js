@@ -17,3 +17,5 @@ function empty() {
 clickMe.addEventListener("click", ()=> {
     empty();
 })
+
+document.getElementById("mybox").indeterminate = true;

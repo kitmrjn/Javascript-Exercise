@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 500vh;
+}
+header{
+    background-color: red;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.scroll-top{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: sticky;
+    top: 0;
+}
+
+.container{
+    margin-top: 100px;
+    height: 200vh;
+}
+.nav-bar{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+.nav-link{
+    top: 50px;
+    position: absolute;
+    display: none;
+}

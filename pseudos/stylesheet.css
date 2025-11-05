@@ -42,3 +42,13 @@ li:empty {
   display: none;
 }
 
+
+li::marker{
+    color: red;
+    content: "4";
+}
+
+input:indeterminate {
+  outline: 2px solid orange;
+}
+
