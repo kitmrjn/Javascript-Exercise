@@ -1,0 +1,25 @@
+:root{
+    --header: 2.5rem;
+    --footer: 60px;
+    --main: calc(100vh - calc(var(--header) - var(--footer)));
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: red;
+    height: var(--header);
+}
+
+main{
+    background-color: grey;
+    height: var(--main);
+}
+
+footer{
+    background-color: green;
+    height: var(--footer);
+}
