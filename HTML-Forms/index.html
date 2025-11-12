@@ -9,12 +9,12 @@
 <body>
     <form action="example.com/" method="post">
         <label for="first-name">First Name:</label>
-        <input type="text" name="first-name" id="first-name" placeholder="TITE">
+        <input type="text" name="first-name" id="first-name" placeholder="John">
     </form>
 
     <div class="greeting">
         <label for="username" >Who do you want to greet?</label>
-        <input type="text" name="username" id="username" placeholder="John">
+        <input type="text" name="username" id="username" placeholder="Your Mom">
         <button class="greet-me">Greet</button>
         <div class="the-greeting"></div>
     </div>
@@ -30,7 +30,114 @@
 
         <label for="user-number">Number:</label>
         <input type="number" name="number" id="user-number">
+
+        <label for="date-of-birth">Birthday:</label>
+        <input type="date" id="date-of-birth" name="birthday">
     </form>
+
+    <textarea name="comment" id="comment" rows="20" cols="60">Write a comment</textarea>
+
+    <select name="Roj" id="is-roj-gay"> 
+        <optgroup label="Conditional">
+            <option value="yes">Is Roj Gay?</option>
+            <option value="no">No</option>
+        </optgroup>
+        <optgroup label="For Girls">
+            <option value="lesbian">Lesbian</option>
+            <option selected value="femboy">Femboy</option>
+            <option value="butiki">Butiki</option>
+        </optgroup>
+    </select>
+
+    <h2>Grade Level</h2>
+    <div>
+        <input type="radio" name="ticket" id="shs" value="SHS">
+        <label for="shs">Senior Highschool</label>
+    </div>
+
+    <div>
+        <input type="radio" name="ticket" id="hs" value="HS" checked>
+        <label for="hs">Highschool</label>
+    </div>
+
+    <div>
+        <input type="radio" name="ticket" id="college" value="College">
+        <label for="college">College</label>
+    </div>
+
+    <h2>Subjects</h2>
+    <div>
+        <input type="checkbox" name="subjects" id="science" value="science">
+        <label for="science">Science</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="subjects" id="math" value="math">
+        <label for="math">Math</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="subjects" id="mapeh" value="mapeh">
+        <label for="mapeh">Mapeh</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="subjects" id="biology" value="biology" checked>
+        <label for="biology">Biology</label>
+    </div>
+    
+    <h2>Do you want us to send you emails in the future?</h2>
+    <div>
+        <input type="checkbox" id="newsletter" name="news_letter" checked>
+        <label for="">Send me a news letter</label>
+    </div>
+
+    <button class="submit" type="submit">Submit</button>
+    <button class="reset"  type="reset">Reset</button>
+    <button type="button">Button</button>
+
+
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name">
+
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name">
+    </fieldset>
+
+    <fieldset>
+        <legend>Grades</legend>
+
+        <label for="mathematics">Mathematics</label>
+        <input type="number" id="mathematics" name="mathematics">
+        
+        <label for="history">History</label>
+        <input type="number" id="history" name="history">
+    </fieldset>
+
+    <fieldset>
+        <legend>Choose your Meal</legend>
+
+        <div>
+            <input type="radio" name="meal" id="pares" value="pares">
+            <label for="pares">Pares</label>
+        </div>
+
+        <div>
+            <input type="radio" name="meal" id="bagnet" value="bagnet">
+            <label for="bagnet">Bagnet</label>
+        </div>
+
+        <div>
+            <input type="radio" name="meal" id="spaghetti" value="spaghetti">
+            <label for="spaghetti">Spaghetti</label>
+        </div>
+    </fieldset>
+
+
     <script src="script.js"></script>
 </body>
 </html>
