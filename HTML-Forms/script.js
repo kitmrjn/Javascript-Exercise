@@ -3,13 +3,15 @@ const container = document.querySelector(".the-greeting");
 const button = document.querySelector('.greet-me');
 const submit = document.querySelector('.submit');
 const reset = document.querySelector('.reset');
+const quantity = document.querySelector('#quantity');
+const quantityAmount = document.querySelector('#quantity-output');
 
 button.addEventListener("click", () => {
     container.innerText = `Happy Birthday ${name.value}`;
 });
 
 submit.addEventListener("click", () => {
-    reset.style.backgroundColor = `${randomColor()}`;
+    reset.style.backgroundColor = randomColor();
 });
 
 function randomColor () {
@@ -18,4 +20,10 @@ function randomColor () {
     const compressed = '#' + sorted.slice(0,6).join("");
     return compressed;
 };
+    quantityAmount.textContent = quantity.value;
+    
+quantity.addEventListener('input', () => {
+    quantityAmount.textContent = `${quantity.value}`;
+})
+
 
